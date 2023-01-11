@@ -1,0 +1,11 @@
+.styledImput {
+  width: 40vw;
+  font-size: 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.styledImput:hover,
+.styledImput:focus {
+  border: 3px solid blue;
+  outline: 0;
+}
