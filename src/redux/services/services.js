@@ -2,7 +2,7 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { onSucsessMessage, onErrorMessage } from '../../components/App';
 
-axios.defaults.baseURL = 'https://63bdb72cc832b33efe18bdb2.mockapi.io';
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
 export const fetchContacts = createAsyncThunk(
   'contacts/fetch',
@@ -39,7 +39,7 @@ export const deleteContact = createAsyncThunk(
       onSucsessMessage(<span>{data.name} has been deleted.</span>);
       return data.id;
     } catch (error) {
-      onErrorMessage(error.message || 'Something went wrong');
+      onErrorMessage('Something went wrong');
       return thunkAPI.rejectWithValue(error.message);
     }
   }

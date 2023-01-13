@@ -4,8 +4,9 @@ import { addContact } from '../../redux/services/services';
 import { Field, Form, Formik, useFormik } from 'formik';
 import { getContacts, selectIsLoading } from '../../selectors/selectors';
 import * as yup from 'yup';
-import onErrorMessage from '../NewContactForm/NewContactForm.styled';
+import onErrorMessage from '../App';
 import Wrapper from '../Wrapper/Wrapper.styled';
+import css from './NewContactForm.module.css';
 const schema = yup.object().shape({
   name: yup.string().min(3, 'Its too short.').required('Type your name please'),
   number: yup
@@ -45,7 +46,7 @@ const AddContactForm = () => {
     validateOnBlur: true,
   });
   return (
-    <div>
+    <div className={css.styledBox}>
       <Formik validationSchema={schema}>
         <Form autoComplete="off" onSubmit={formik.handleSubmit}>
           <Wrapper>
@@ -58,7 +59,7 @@ const AddContactForm = () => {
               value={formik.values.name}
             />
             {formik.touched.name && formik.errors.name ? (
-              <div>{formik.errors.name}</div>
+              <div className={css.styledError}>{formik.errors.name}</div>
             ) : null}
           </Wrapper>
           <Wrapper>
@@ -71,7 +72,7 @@ const AddContactForm = () => {
               onChange={formik.handleChange}
             />
             {formik.touched.number && formik.errors.number ? (
-              <div>{formik.errors.number}</div>
+              <div className={css.styledError}>{formik.errors.number}</div>
             ) : null}
           </Wrapper>
           <Wrapper>
