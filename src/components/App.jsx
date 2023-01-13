@@ -10,7 +10,7 @@ import { selectIsLoading } from '../selectors/selectors';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FallingLines } from 'react-loader-spinner';
-import { refreshUser } from '../redux/registration/repistrationAP';
+import { refreshUser } from '../redux/registration/registrationAP';
 import {
   selectIsLoggedIn,
   selectIsRefreshing,
