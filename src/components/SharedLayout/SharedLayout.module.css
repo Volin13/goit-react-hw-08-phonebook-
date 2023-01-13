@@ -1,0 +1,23 @@
+.layoutBox {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1000px;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: #d4efee;
+  height: 100vh;
+}
+.btn {
+  padding: 5px 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: inset 0 -3em 3em #1e81b0, 0 0 0 2px rgb(190, 234, 237),
+    0.3em 0.3em 1em rgba(30, 129, 176, 0.5);
+  color: white;
+  margin: 20px auto;
+}
+.btn:hover,
+.btn:focus {
+  color: black;
+  border: 2px solid white;
+}
