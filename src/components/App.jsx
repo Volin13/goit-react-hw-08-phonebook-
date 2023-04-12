@@ -37,28 +37,13 @@ const App = () => {
         <Routes>
           <Route path="" element={<SharedLayout />}>
             <Route
-              index
-              element={
-                <Logged>
-                  <Login />
-                </Logged>
-              }
+              path="/registration"
+              element={<Logged component={<Registration />} />}
             />
+            <Route path="/logIn" element={<Logged component={<Login />} />} />
             <Route
-              path="registration"
-              element={
-                <Logged>
-                  <Registration />
-                </Logged>
-              }
-            />
-            <Route
-              path="phonebook"
-              element={
-                <NotLogged>
-                  <Phonebook />
-                </NotLogged>
-              }
+              path="/phonebook"
+              element={<NotLogged component={<Phonebook />} />}
             />
           </Route>
         </Routes>

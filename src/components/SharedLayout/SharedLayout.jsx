@@ -4,17 +4,7 @@ import { Outlet } from 'react-router-dom';
 import { selectIsLoggedIn } from '../../redux/registration/registrationSelectors';
 import UserMenu from '../UserMenu/UserMenu';
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
 import css from './SharedLayout.module.css';
-
-const StyledLink = styled(NavLink)`
-  color: black;
-
-  &.active {
-    color: black;
-    border: 2px solid white;
-  }
-`;
 
 const SharedLayout = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
@@ -25,28 +15,19 @@ const SharedLayout = () => {
           {isLoggedIn ? (
             <div>
               <UserMenu />
-              <StyledLink
-                style={{ textDecoration: 'none', color: 'inherit' }}
-                to="/phonebook"
-              >
+              <NavLink to="/phonebook" className={css.navlink}>
                 <button className={css.btn}>Update!</button>
-              </StyledLink>
+              </NavLink>
             </div>
           ) : (
-            <>
-              <StyledLink
-                style={{ textDecoration: 'none', color: 'inherit' }}
-                to="/registration"
-              >
-                <button className={css.btn}>Registration</button>
-              </StyledLink>
-              <StyledLink
-                style={{ textDecoration: 'none', color: 'inherit' }}
-                to="/"
-              >
-                <button className={css.btn}>LogIn</button>
-              </StyledLink>
-            </>
+            <div className={css.navigation}>
+              <NavLink to="/registration" className={css.navlink}>
+                Registration
+              </NavLink>
+              <NavLink to="/logIn" className={css.navlink}>
+                LogIn
+              </NavLink>
+            </div>
           )}
         </nav>
       </header>

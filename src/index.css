@@ -2,26 +2,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d4efee;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
-  margin: 0;
-}
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
 ul,
-ol {
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
   padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
-img {
-  display: block;
+
+/* Reset list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Reset anchor styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+/* Make images and embedded objects responsive */
+img,
+embed,
+object,
+video {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+:root {
+  --bgColor: #fafafa;
+  --greyColor: #ececec;
+  --whiteColor: #ffffff;
+  --greyBgColor: #efefef;
+  --blackColor: #000000;
+  --secondaryBlackColor: #28224b;
+  --greenColor: #8baa36;
+  --secondaryGreenColor: #8aa936;
+  --errorColor: #e74a3b;
+  --warningColor: #f6c23e;
+  --successColor: #3cbc81;
+  --titleColor: #001833;
+  --mainTextColor: #3e4462;
+  --secondaryTextColor: #23262a;
+  --greyTextColor: #bdbdbd;
+  --secondaryGreyTextColor: #7e7e7e;
+  --secondaryGreyTextColorTransparent: rgba(126, 126, 126, 0.5);
+  --crossColor: #333333;
+  --inputBg: #d9d9d9;
+  --borderColor: #f0f0f0;
+  --ingridientsBcg: #ebf3d4;
+  --modalBg: #2a2c36;
+  --lineColor: #e0e0e0;
+  --secondaryLineColor: #707070;
+  --countColor: #333333;
+  --countBorder: rgba(51, 51, 51, 0.3);
+  --recipeText: rgba(0, 0, 0, 0.8);
+  --linksHoverColor: #1e1f28;
+  --inputBgWithOpacity: rgba(217, 217, 217, 0.15);
+  --bgScrolbarColorPrimary: #e7e5e5;
+  --bgScrolbarColorSecondary: rgba(217, 217, 217, 0.025);
+  --boxShadow: rgba(0, 0, 0, 0.0314074);
+  --selectContentColor: rgba(0, 0, 0, 0.5);
 }
