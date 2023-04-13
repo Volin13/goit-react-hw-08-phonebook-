@@ -9,9 +9,9 @@ import css from './SharedLayout.module.css';
 const SharedLayout = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
-    <div className={css.layoutBox}>
-      <header>
-        <nav>
+    <div>
+      <footer>
+        <nav className={css.navigation}>
           {isLoggedIn ? (
             <div>
               <UserMenu />
@@ -20,17 +20,17 @@ const SharedLayout = () => {
               </NavLink>
             </div>
           ) : (
-            <div className={css.navigation}>
+            <>
               <NavLink to="/registration" className={css.navlink}>
                 Registration
               </NavLink>
               <NavLink to="/logIn" className={css.navlink}>
                 LogIn
               </NavLink>
-            </div>
+            </>
           )}
         </nav>
-      </header>
+      </footer>
       <Outlet />
     </div>
   );

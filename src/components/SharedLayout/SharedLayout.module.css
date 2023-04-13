@@ -1,11 +1,3 @@
-.layoutBox {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1280px;
-  gap: 10px;
-  justify-content: center;
-  height: 100vh;
-}
 .navigation {
   position: absolute;
   text-align: center;
@@ -17,7 +9,6 @@
 }
 .navlink {
   font-size: 30px;
-  color: var(--secondaryBlackColor);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -34,8 +25,4 @@
 .btn:hover,
 .btn:focus {
   color: black;
-}
-
-.active {
-  color: #499bbf;
 }

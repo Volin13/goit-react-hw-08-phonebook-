@@ -20,6 +20,9 @@ code {
 *::after {
   box-sizing: border-box;
 }
+.active {
+  color: #499bbf;
+}
 
 /* Remove default margin and padding */
 html,

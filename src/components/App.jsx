@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Phonebook from '../Pages/PhoneBook/PhoneBook';
-import Logged from '../Routes/IsLogged';
-import NotLogged from '../Routes/NotLogged';
+import PrivateRoute from '../Routes/PrivateRoute';
+import PublicRoute from '../Routes/PublicRoute';
 import SharedLayout from './SharedLayout/SharedLayout';
 import Login from '../Pages/LogIn/Login';
 import Registration from '../Pages/Registration/Registration';
@@ -38,12 +38,15 @@ const App = () => {
           <Route path="" element={<SharedLayout />}>
             <Route
               path="/registration"
-              element={<Logged component={<Registration />} />}
+              element={<PublicRoute component={<Registration />} />}
             />
-            <Route path="/logIn" element={<Logged component={<Login />} />} />
+            <Route
+              path="/logIn"
+              element={<PublicRoute component={<Login />} />}
+            />
             <Route
               path="/phonebook"
-              element={<NotLogged component={<Phonebook />} />}
+              element={<PrivateRoute component={<Phonebook />} />}
             />
           </Route>
         </Routes>
