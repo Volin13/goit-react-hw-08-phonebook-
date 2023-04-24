@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.6a7dc81f.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.028cd049.js",
-    "static/media/mail.svg": "/goit-react-hw-08-phonebook/static/media/mail.203ec675ed79461f20950164190d45bd.svg",
-    "static/media/phone-book-svgrepo-com.svg": "/goit-react-hw-08-phonebook/static/media/phone-book-svgrepo-com.0d2196625fb281bf59f470d59ae8e470.svg",
-    "static/media/user.svg": "/goit-react-hw-08-phonebook/static/media/user.f43a466667912fa9526446ab09f736f4.svg",
-    "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "static/media/lock.svg": "/goit-react-hw-08-phonebook/static/media/lock.5843aa90344be290c1d8c466b561f9ed.svg",
-    "static/media/erorr.svg": "/goit-react-hw-08-phonebook/static/media/erorr.e648dd7362eea2f013385398caba9d1c.svg",
-    "static/media/unlock.svg": "/goit-react-hw-08-phonebook/static/media/unlock.6bc178b83ade74bd301f77ce2b607489.svg",
-    "main.6a7dc81f.css.map": "/goit-react-hw-08-phonebook/static/css/main.6a7dc81f.css.map",
-    "main.028cd049.js.map": "/goit-react-hw-08-phonebook/static/js/main.028cd049.js.map"
+    "main.css": "/phonebook-frontend/static/css/main.6a7dc81f.css",
+    "main.js": "/phonebook-frontend/static/js/main.b429be1c.js",
+    "static/media/mail.svg": "/phonebook-frontend/static/media/mail.203ec675ed79461f20950164190d45bd.svg",
+    "static/media/phone-book-svgrepo-com.svg": "/phonebook-frontend/static/media/phone-book-svgrepo-com.0d2196625fb281bf59f470d59ae8e470.svg",
+    "static/media/user.svg": "/phonebook-frontend/static/media/user.f43a466667912fa9526446ab09f736f4.svg",
+    "index.html": "/phonebook-frontend/index.html",
+    "static/media/lock.svg": "/phonebook-frontend/static/media/lock.5843aa90344be290c1d8c466b561f9ed.svg",
+    "static/media/erorr.svg": "/phonebook-frontend/static/media/erorr.e648dd7362eea2f013385398caba9d1c.svg",
+    "static/media/unlock.svg": "/phonebook-frontend/static/media/unlock.6bc178b83ade74bd301f77ce2b607489.svg",
+    "main.6a7dc81f.css.map": "/phonebook-frontend/static/css/main.6a7dc81f.css.map",
+    "main.b429be1c.js.map": "/phonebook-frontend/static/js/main.b429be1c.js.map"
   },
   "entrypoints": [
     "static/css/main.6a7dc81f.css",
-    "static/js/main.028cd049.js"
+    "static/js/main.b429be1c.js"
   ]
 }
